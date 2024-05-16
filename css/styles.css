@@ -152,7 +152,7 @@ color: #404bbf;
     padding: 120px 0;
 }
 
-.section-two-title .visually-hidden {
+.visually-hidden {
     position: absolute;
         width: 1px;
         height: 1px;
