@@ -23,6 +23,8 @@ img {
 .header {
         border-bottom: 1px solid #e7e9fc;
         background: #fff;
+        max-width: 1440px;
+        margin: 0 auto;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 .container {
@@ -76,7 +78,27 @@ margin-right: auto;
         text-transform: capitalize;
         display: flex;
         padding: 24px 0;
+
 }
+.navigation-item:first-child .navigation{
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.navigation-item:first-child .navigation::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+
+
 .navigation:hover,
 .navigation:active,
 .navigation:focus {
@@ -91,6 +113,13 @@ margin-right: auto;
     font-style: normal;
     padding-top: 24px;
 }
+
+.contacts-list-item .contacts {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+
+
 .contacts-menu {
     gap: 40px;
     display: flex;
@@ -115,11 +144,12 @@ color: #404bbf;
 .section-one {
     background-color: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/office.jpg);
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
     background-repeat: no-repeat;
-    max-width: 1440px;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
 }
 .section-one-title {
     font-family: "Roboto", sans-serif;
@@ -158,6 +188,8 @@ color: #404bbf;
 /* sectiom 2 */
 .section-two {
     padding: 120px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -207,6 +239,8 @@ overflow: hidden;
 .section-three {
    background: #f4f4fd; 
    padding: 120px 0;
+   max-width: 1440px;
+   margin: 0 auto;
 }
 
 .section-three-title {
@@ -262,6 +296,8 @@ text-align: center;
 
 .section-four {
     padding: 120px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -313,6 +349,8 @@ row-gap: 48px;
 .footer {
     background: #2e2f42;
     padding: 100px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .footer .logo {
     display: inline-block;
@@ -342,10 +380,10 @@ font-family: "Raleway", sans-serif;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        max-width: 264px;
         
 }
 .footer .container {
-    max-width: 264px;
     text-align: left;
     margin-left: auto;
 }
