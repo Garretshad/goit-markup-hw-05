@@ -543,5 +543,13 @@ transform: translate(-50%, -50%);
     position: absolute;
 top: 24px;
 right: 24px;
-border-radius: 100%;
+border-radius: 100%;   
+ width: 24px;
+    height: 24px;
+}
+ 
+.modal-close-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
