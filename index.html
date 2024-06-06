@@ -489,7 +489,44 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <input type="text" />
+          <div class="modal-label-box">
+            <label for="user-name" class="modal-label"
+              >Name
+              <div class="modal-icon-input-box">
+                <input type="text" name="user-name" class="modal-input" />
+                <svg class="input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+            <label for="user-phone" class="modal-label"
+              >Phone
+              <div class="modal-icon-input-box">
+                <input type="tel" name="user-phone" class="modal-input" />
+                <svg class="input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg></div
+            ></label>
+            <label for="user-email" class="modal-label"
+              >Email
+              <div class="modal-icon-input-box">
+                <input type="email" name="user-email" class="modal-input" />
+                <svg class="input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg></div
+            ></label>
+            <label for="user-comment" class="modal-label"
+              >Comment
+              <div class="modal-icon-input-box">
+                <input
+                  class="modal-input-comment"
+                  type="text"
+                  name="user-comment"
+                  class="modal-input"
+                  placeholder="Text input"
+                /></div
+            ></label>
+          </div>
         </form>
       </div>
     </div>
